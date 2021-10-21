@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/javascript">
+   <!-- <script type="text/javascript">
         window.onload = function(){
                document.getElementById("boton").onclick=sumar;
            }
@@ -16,12 +16,13 @@
                alert("la suma es: " +suma);
                document.getSelection
            }
-       </script>
+       </script> -->
 </head>
 <body>
 
     <h3>Calculadora Integral Chile</h3>
 
+    <form>
     <label for="bronce"><input id="bronce" type="radio" name="pack" value="25940">Pack BronceSd</label>
     <label for="broncehd"><input id="broncehd" type="radio" name="pack" value="28940">Pack BronceHd</label>
     <label for="plata"><input id="plata" type="radio" name="pack" value="32450">Pack PlataSd</label>
@@ -58,10 +59,41 @@
     <label for="6"><input id="6" type="radio" name="equipos" value="15640"> 6</label>
     <label for="7"><input id="7" type="radio" name="equipos" value="19550"> 7</label>
     <label for="8"><input id="8" type="radio" name="equipos" value="23460"> 8</label>
+    <button>Obtener TOTAL</button>
+    </form>
+    <div id="resultado"></div>
     <br>
     <br>
-    <input type="button" id="boton" value="calcula" >
+    
 
+    <script>
+        // buscar el <form> y guardarlo en una variable
+        const form = document.querySelector('form');
+  
+        // decir que en el evento enviar se sume el total
+        form.addEventListener('submit', obtenerTotal);
+  
+        function obtenerTotal(event) {
+          // evitar enviar el formulario que ocasiona que se refresque la pagina
+          event.preventDefault();
+  
+          // obtener todos los input radio
+          const formData = new FormData(event.target);
+  
+          // convertir los valores a String, o colocar un 0 si no elegieron algo
+          const pack = parseInt(formData.get('pack') || '0', 10);
+          const plan = parseInt(formData.get('plan') || '0', 10);
+          const premium = parseInt(formData.get('premium') || '0', 10);
+          const equipos = parseInt(formData.get('equipos') || '0', 10);
+  
+          const result = pack + plan + premium + equipos;
+
+         // alert("la suma es:" + result);
+         // Window.print(result);
+         document.getElementById('resultado').innerHTML = result;
+        
+        }
+      </script>
     
 </body>
 </html>
