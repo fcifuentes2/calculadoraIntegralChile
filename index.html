@@ -5,48 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript">
+        window.onload = function(){
+               document.getElementById("boton").onclick=sumar;
+           }
+           function sumar(){
+               var bronce = document.getElementById("bronce").value; 
+               var broncehd = document.getElementById("broncehd").value;
+               suma = parseInt(bronce) + parseInt(broncehd) ;
+               alert("la suma es: " +suma);
+               document.getSelection
+           }
+       </script>
 </head>
 <body>
 
     <h3>Calculadora Integral Chile</h3>
 
-    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Pack</label>
-
-    <label for="bronce"><input id="bronce" type="checkbox" name="personality" value="bronce"> BronceSd</label>
-    <label for="broncehd"><input id="broncehd" type="checkbox" name="personality" value="broncehd"> BronceHd</label>
-    <label for="plata"><input id="plata" type="checkbox" name="personality" value="plata"> PlataSd</label>
-    <label for="platahd"><input id="platahd" type="checkbox" name="personality" value="platahd"> PlataHd</label>
-    <label for="orosd"><input id="orosd" type="checkbox" name="personality" value="orosd"> OroSd</label>
-    <label for="orohd"><input id="orohd" type="checkbox" name="personality" value="orohd"> OroHd</label>
-    <label for="oroplus"><input id="oroplus" type="checkbox" name="personality" value="oroplus"> OroPlus</label>
-    <label for="oroplushd"><input id="oroplushd" type="checkbox" name="personality" value="oroplushd"> OroPlusHd</label>
+    <label for="bronce"><input id="bronce" type="radio" name="pack" value="25940">Pack BronceSd</label>
+    <label for="broncehd"><input id="broncehd" type="radio" name="pack" value="28940">Pack BronceHd</label>
+    <label for="plata"><input id="plata" type="radio" name="pack" value="32450">Pack PlataSd</label>
+    <label for="platahd"><input id="platahd" type="radio" name="pack" value="35100">Pack PlataHd</label>
+    <label for="orosd"><input id="orosd" type="radio" name="pack" value="33450">Pack OroSd</label>
+    <label for="orohd"><input id="orohd" type="radio" name="pack" value="36100">Pack OroHd</label>
+    <label for="oroplus"><input id="oroplus" type="radio" name="pack" value="39000">Pack OroPlus</label>
+    <label for="oroplushd"><input id="oroplushd" type="radio" name="pack" value="41000">Pack OroPlusHd</label>
     <br>
-    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Plan</label>
+    <br>
+    <label for="pplatahd"><input id="pplatahd" type="radio" name="plan" value="27580">Plan PlataHd</label>
+    <label for="porohd"><input id="porohd" type="radio" name="plan" value="32450">Plan OroHd</label>
+    <label for="poroplus"><input id="poroplus" type="radio" name="plan" value="37000">Plan OroPlus</label>
+    <label for="oro4k"><input id="oro4k" type="radio" name="plan" value="41000">Plan Oro4K</label>
+    <label for="broncelite"><input id="broncelite" type="radio" name="plan" value="22000">Plan bronce lite</label>
+    <br>
     
-    <label for="pplatahd"><input id="pplatahd" type="checkbox" name="personality" value="pplatahd"> PlataHd</label>
-    <label for="porohd"><input id="porohd" type="checkbox" name="personality" value="porohd"> OroHd</label>
-    <label for="poroplus"><input id="poroplus" type="checkbox" name="personality" value="poroplus"> OroPlus</label>
-    <label for="oro4k"><input id="oro4k" type="checkbox" name="personality" value="oro4k"> Oro4K</label>
-    <br>
     <p>Premiums</p>
 
-    <label for="tnt"><input id="tnt" type="checkbox" name="personality" value="tnt"> tnt</label>
-    <label for="tnthd"><input id="tnthd" type="checkbox" name="personality" value="tnthd"> tnthd</label>
-    <label for="hbo"><input id="hbo" type="checkbox" name="personality" value="hbo"> hbo</label>
-    <label for="star"><input id="star" type="checkbox" name="personality" value="star"> star</label>
-    <label for="foxsport"><input id="foxsport" type="checkbox" name="personality" value="foxsport"> foxsport</label>
-    <label for="todostar"><input id="todostar" type="checkbox" name="personality" value="todostar"> todostar</label>
-    <label for="hotpack"><input id="hotpack" type="checkbox" name="personality" value="hotpack"> hotpack</label>
-    <label for="exxotico"><input id="exxotico" type="checkbox" name="personality" value="exxotico"> exxotico</label>
-    <label for="full"><input id="full" type="checkbox" name="personality" value="full"> full</label>
+    <label for="tnt"><input id="tnt" type="checkbox" name="premium" value="8730"> tnt</label>
+    <label for="tnthd"><input id="tnthd" type="checkbox" name="premium" value="2570"> tnthd</label>
+    <label for="hbo"><input id="hbo" type="checkbox" name="premium" value="7920"> hbo</label>
+    <label for="star"><input id="star" type="checkbox" name="premium" value="7920r"> star</label>
+    <label for="foxsport"><input id="foxsport" type="checkbox" name="premium" value="9970"> foxsport</label>
+    <label for="todostar"><input id="todostar" type="checkbox" name="premium" value="13500"> todostar</label>
+    <label for="hotpack"><input id="hotpack" type="checkbox" name="premium" value="8315"> hotpack</label>
+    <label for="exxotico"><input id="exxotico" type="checkbox" name="premium" value="8315"> exxotico</label>
+    <label for="full"><input id="full" type="checkbox" name="premium" value="1540"> full service</label>
 
     <p>Equipos</p>
-    <label for="3"><input id="3" type="radio" name="indoor-outdoor"> 3</label>
-    <label for="4"><input id="4" type="radio" name="indoor-outdoor"> 4</label>
-    <label for="5"><input id="5" type="radio" name="indoor-outdoor"> 5</label>
-    <label for="6"><input id="6" type="radio" name="indoor-outdoor"> 6</label>
-    <label for="7"><input id="7" type="radio" name="indoor-outdoor"> 7</label>
-    <label for="8"><input id="8" type="radio" name="indoor-outdoor"> 8</label>
+    <label for="3"><input id="3" type="radio" name="equipos" value="3910"> 3</label>
+    <label for="4"><input id="4" type="radio" name="equipos" value="7820"> 4</label>
+    <label for="5"><input id="5" type="radio" name="equipos" value="11730"> 5</label>
+    <label for="6"><input id="6" type="radio" name="equipos" value="15640"> 6</label>
+    <label for="7"><input id="7" type="radio" name="equipos" value="19550"> 7</label>
+    <label for="8"><input id="8" type="radio" name="equipos" value="23460"> 8</label>
+    <br>
+    <br>
+    <input type="button" id="boton" value="calcula" >
 
+    
 </body>
 </html>
