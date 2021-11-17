@@ -6,6 +6,16 @@
   html {
     font-size: 62.5%;
   }
+  hr {
+    width: 195px;
+  }
+  button {
+    width: 70px;
+    height: 25px;
+    font-size:medium;
+    font-weight: bold;
+    color: rgb(2, 2, 124);
+  }
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -22,22 +32,34 @@
     font-size: x-large;
   }
   .c1 {
-    background-color: #003476;
+    background-color: #0075a8;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
   }
   .c2 {
-    background-color: #0062d2;
+    background-color: #0075a8;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
   }
   .c3 {
-    background-color: #b4d2f7;
+    background-color: #0075a8;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
   }
   .c4 {
-    background-color: #d5dfef;
+    background-color: #0075a8;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
   }
   .c5 {
-    background-color: #dfe1e5;
+    background-color: #0075a8;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
   }
   .c6 {
-    background-color: #dfe1e5;
+    background-color: #0075a8;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
   }
   @media (min-width: 600px) {
     .c1 {
