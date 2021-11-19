@@ -14,7 +14,7 @@
     height: 25px;
     font-size:medium;
     font-weight: bold;
-    color: rgb(2, 2, 124);
+    color: rgb(0, 0, 0);
   }
   input[type="radio"] {
       background-color: black;
@@ -22,7 +22,7 @@
       height: 17px;
   }
   input[type="checkbox"] {
-    background-color: black;
+    background: red;
     width: 20px;
     height: 20px;
     }
@@ -43,7 +43,7 @@
   }
   .c1 {
     background-color: #0075a8;
-    color: black;
+    color: #fff;
     padding: 10px 10px 10px 10px;
   }
   .c2 {
