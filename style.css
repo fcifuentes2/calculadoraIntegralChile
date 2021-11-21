@@ -69,12 +69,12 @@
   @media (max-width: 600px) {
     .flotante{
       position: fixed;
-      top: 10px;
+      top: 370px;
       right: 5px;
     }
     .flotanteButton{
       position: fixed;
-      top: 40px;
+      top: 400px;
       right: 5px;
     }
   }
