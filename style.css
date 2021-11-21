@@ -10,6 +10,10 @@
   input:checked + label {
     color: black;
   }
+  option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+  }
   hr {
     width: 195px;
   }
@@ -30,14 +34,25 @@
     width: 20px;
     height: 20px;
     }
- 
-   
+    
   .container {
     display: flex;
     flex-wrap: wrap;
     background-color: #0075a8;
     color: blanchedalmond;
   }
+
+  
+
+.rvpEspacio{
+  position: absolute;
+  left: 245px;  
+}
+.cheEspacio{
+  position: absolute;
+  left: 220px;
+}
+
 
   .c1,
   .c2,
