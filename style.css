@@ -77,6 +77,24 @@
       top: 400px;
       right: 5px;
     }
+    .c1 {
+      order: 2;
+    }
+    .c2 {
+      order: 1;
+    }
+    .c3 {
+      order: 4;
+    }
+    .c4 {
+      order: 3;
+    }
+    .c5 {
+      order: 5;
+    }
+    .c6 {
+      order: 6;
+      }
   }
   @media (min-width: 600px) {
     .c1 {
