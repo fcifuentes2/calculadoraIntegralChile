@@ -9,22 +9,6 @@
     <link rel="icon" href="calculadora.ico">
     <script type="text/javascript" src="script.js"></script>
     
-
-   <!-- <script type="text/javascript">
-        window.onload = function(){
-               document.getElementById("boton").onclick=sumar;
-           }
-           function sumar(){
-               var bronce = document.getElementById("bronce").value; 
-               var broncehd = document.getElementById("broncehd").value;
-               suma = parseInt(bronce) + parseInt(broncehd) ;
-               alert("la suma es: " +suma);
-               document.getSelection
-           }
-       </script> -->
-      
-
-
 </head>
 <body>
     <form class="container">
@@ -102,6 +86,13 @@
     <input id="rvo12" type="checkbox" name="rvoEquipo" value="-1955"><label for="rvo12">50% deco Adicional</label>
     </div>
     <div class="c6">
+      <h4>Extras</h4>
+      <hr>
+      <input id="recargo" type="checkbox" name="recargo" value="1600"><label class="rvpValor" for="recargo">Recargo x mora $1600</label><br>
+      <input id="tntflex" type="checkbox" name="tntflex" value="3380"><label class="rvpValor" for="tntflex">Tnt flexible $3380</label><br>
+      <input id="deco" type="checkbox" name="deco" value="14990"><label class="rvpValor" for="deco">Deco Adicional $14990</label>
+      <br>
+      <br>
       <div class="flotante" id="resultado"></div>
       <button class="flotanteButton">Borrar</button>
     </div>
