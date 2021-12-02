@@ -13,22 +13,22 @@
   }
 
   .nuevos {
-    width: 180px;
-  }
-  .cartera {
     width: 185px;
   }
+  .cartera {
+    width: 190px;
+  }
   .decos {
-    width: 160px;
+    width: 165px;
   }
   .premium {
-    width: 210px;
+    width: 215px;
   }
   .rvo {
-    width: 195px;
+    width: 200px;
   }
   .extras {
-    width: 85px;
+    width: 90px;
   }
   h4{
     color: black;
@@ -123,29 +123,22 @@
   @media (min-width: 600px) {
     .c1 {
       width: 50%;
-      /* order: 1; */
-       /* order: 1; */
     }
     .c2 {
       width: 50%;
-      /* order: 2; */
     }
     .c3 {
       width: 100%;
-      /* order: 3; */
     }
     .c4 {
       width: 100%;
-      /* order: 4; */
     }
     .c5 {
       width: 100%;
-      /* order: 5; */
     }
     .c6 {
         width: 100%;
-        /* order: 5; */
-      }
+    }
   }
   @media (min-width: 800px) {
     .c1 {
