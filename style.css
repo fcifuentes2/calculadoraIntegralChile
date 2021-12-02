@@ -13,22 +13,22 @@
   }
 
   .nuevos {
-    width: 170px;
-  }
-  .cartera {
     width: 175px;
   }
+  .cartera {
+    width: 180px;
+  }
   .decos {
-    width: 150px;
+    width: 155px;
   }
   .premium {
-    width: 200px;
+    width: 205px;
   }
   .rvo {
-    width: 185px;
+    width: 190px;
   }
   .extras {
-    width: 75px;
+    width: 80px;
   }
   h4{
     color: black;
