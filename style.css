@@ -22,13 +22,13 @@
     width: 155px;
   }
   .premium {
-    width: 215px;
-  }
-  .rvo {
     width: 200px;
   }
+  .rvo {
+    width: 185px;
+  }
   .extras {
-    width: 90px;
+    width: 75px;
   }
   h4{
     color: black;
@@ -95,16 +95,16 @@
       width: 200px;
     }
     .cartera {
-      width: 220px;
+      width: 210px;
     }
     .decos {
       width: 185px;
     }
     .premium {
-      width: 225px;
+      width: 235px;
     }
     .rvo {
-      width: 210px;
+      width: 220px;
     }
     .extras {
       width: 90px;
