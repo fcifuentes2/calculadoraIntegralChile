@@ -91,6 +91,24 @@
     
   }
   @media (max-width: 600px) {
+    .nuevos {
+      width: 185px;
+    }
+    .cartera {
+      width: 190px;
+    }
+    .decos {
+      width: 165px;
+    }
+    .premium {
+      width: 215px;
+    }
+    .rvo {
+      width: 200px;
+    }
+    .extras {
+      width: 90px;
+    }
     .flotante{
       position: fixed;
       top: 370px;
