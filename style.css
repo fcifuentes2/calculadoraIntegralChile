@@ -12,7 +12,27 @@
     color: black;
   }
 
-  hr {
+  .nuevos {
+    width: 170px;
+  }
+  .cartera {
+    width: 175px;
+  }
+  .decos {
+    width: 150px;
+  }
+  .premium {
+    width: 200px;
+  }
+  .rvo {
+    width: 185px;
+  }
+  .extras {
+    width: 75px;
+  }
+  h4{
+    color: black;
+    background-color: yellow;
     width: 195px;
   }
   button {
@@ -39,6 +59,7 @@
     background-color: #0075a8;
     color: white;
     font:bolder;
+    
   }
 
   
@@ -65,6 +86,9 @@
     font-size: x-large;
     padding-left: 20px;
     padding-top: 10px;
+    border: 2px groove white;
+    
+    
   }
   @media (max-width: 600px) {
     .flotante{
