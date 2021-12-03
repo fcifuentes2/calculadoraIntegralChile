@@ -62,7 +62,9 @@
     
   }
 
-  
+  #modo {
+    color: white;
+  }
 
 .rvpEspacio{
   position: absolute;
