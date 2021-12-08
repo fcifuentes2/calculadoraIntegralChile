@@ -65,6 +65,7 @@
   #modo {
     color: white;
   }
+  
 
 .rvpEspacio{
   position: absolute;
@@ -120,6 +121,9 @@
       position: fixed;
       top: 400px;
       right: 5px;
+    }
+    #resultado {
+      color: black;
     }
     .c1 {
       order: 2;
