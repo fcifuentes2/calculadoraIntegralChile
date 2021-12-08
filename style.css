@@ -124,6 +124,7 @@
     }
     #resultado {
       color: black;
+      font-weight: bolder;
     }
     .c1 {
       order: 2;
