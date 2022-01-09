@@ -75,7 +75,9 @@
   position: absolute;
   left: 220px;
 }
-
+#sugerencia{
+  font-size: 13px;
+}
 
   .c1,
   .c2,
