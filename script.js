@@ -33,6 +33,7 @@ const premium11Check = document.querySelector('input[name=premium11]:checked')
 const premium12Check = document.querySelector('input[name=premium12]:checked')
 const premium13Check = document.querySelector('input[name=premium13]:checked')
 const premium14Check = document.querySelector('input[name=premium14]:checked')
+const premium15Check = document.querySelector('input[name=premium15]:checked')
 const recargoCheck = document.querySelector('input[name=recargo]:checked')
 const tntCheck = document.querySelector('input[name=tntflex]:checked')
 const decoCheck = document.querySelector('input[name=deco]:checked')
@@ -65,6 +66,7 @@ const premium11 = premium11Check ?  Number(premium11Check.value): 0
 const premium12 = premium12Check ?  Number(premium12Check.value): 0
 const premium13 = premium13Check ?  Number(premium13Check.value): 0
 const premium14 = premium14Check ?  Number(premium14Check.value): 0
+const premium15 = premium15Check ?  Number(premium15Check.value): 0
 const recargo = recargoCheck ?  Number(recargoCheck.value): 0
 const tntflex = tntCheck ?  Number(tntCheck.value): 0
 const deco = decoCheck ?  Number(decoCheck.value): 0 
@@ -82,7 +84,7 @@ const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
 //suma total se le asigna a variable result
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
-premium12 + premium13 + premium14 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvp9 + rvoEquipo + recargo + tntflex + deco;
+premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvp9 + rvoEquipo + recargo + tntflex + deco;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
