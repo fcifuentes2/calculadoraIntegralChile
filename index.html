@@ -18,7 +18,7 @@
     
  </head>
 <body>
-    <form class="container">
+    <form class="container" name="f1" id="formElement">
     <div class="c1">
     <h4 class="nuevos">Clientes Nuevos</h4>
     <hr class="nuevos">
@@ -106,7 +106,7 @@
       <input id="extra" type="text" name="Extra" value="" class="Extra"><label for="Extra">Ingresa un cargo adicional</label>
       <br>
       <br>
-      <div class="flotante" id="resultado"></div>
+      <label class="flotante" id="resultado"></Label><br>
       <button class="flotanteButton">Borrar</button>
       <br>
       <br>
@@ -117,11 +117,61 @@
       <br>
       <br>
       <p id="sugerencia">Sugerencias, errores escribeme x workPlace: <a href="https://directv.workplace.com/chat/t/100001212809222" target="_blank"> Fernando Cifuentes Obonaga</a> </p>
+      </div>
+      <div class="c7">
+        <textarea id="texto" placeholder="Selecciona texto, dale click en copy y pega en tu contacto ;-)" ></textarea>
+        <!-- <button id="boton">Copy</button><br> -->
+        <p>
+           <a href="#" id="boton">Copy</a>
+      </p>
+        <label for="" class="tituloCopy">Rvo</label><br>
+        <input id="rvo0" type="checkbox" name="rvo0" value="Quiero la baja del servicio por costos, se deriva rvo "><label class="rvo" for="rvo0">Quiero la baja del servicio por costos, se deriva rvo</label><br>
+        <input id="rvo01" type="checkbox" name="rvo01" value="Quiero la baja del servicio, se deriva rvo "><label class="rvo" for="rvo01">Quiero la baja del servicio, se deriva rvo</label><br>
+        <input id="rvo02" type="checkbox" name="rvo02" value="Quiero quiero renovar promociones en servicio basico, se deriva rvo "><label class="rvo" for="rvo02">Quiero quiero renovar promociones en servicio basico, se deriva rvo</label><br>
+        <label for="" class="tituloCopy">Rvp</label><br>
+        <input id="rvp0" type="checkbox" name="rvp0" value="Quiero quiero renovar promociones en servicio premium, acepta ofertas retepremium 50% x 4 meses "><label class="rvo" for="rvp0">Quiero quiero renovar promociones en servicio premium, acepta ofertas retepremium 50% x 4 meses</label><br>
+        <input id="rvp01" type="checkbox" name="rvp01" value="Quiero la baja de la programacion premium, cancela fecha ip no acepta ofertas :-( "><label class="rvp" for="rvp01">Quiero la baja de la programacion premium, cancela fecha ip no acepta ofertas :-(</label><br>
+        <label for="" class="tituloCopy">Factura</label><br>
+        <input id="fac" type="checkbox" name="fac" value="Porque me llego tan alta la boleta, se explica boleta "><label class="rvp" for="fac">Porque me llego tan alta la boleta, se explica boleta</label><br>
+        <input id="fac1" type="checkbox" name="fac1" value="Porque me descuentan otra vez de la tc, se confirma cancelacion de la tc, se factura mes anticipado "><label class="rvp" for="fac1">Porque me descuentan otra vez de la tc, se confirma cancelacion de la tc, se factura mes anticipado </label><br>
+       </div>
+      <div class="c8">
+        <label for="" class="tituloCopy">Programacion</label><br>
+        <input id="pro" type="checkbox" name="pro" value="Quiero activar el canal Tnt, acepta proporcional mas el mes completo en siguiente factura "><label class="rvo" for="pro">Quiero activar el canal Tnt, acepta proporcional mas el mes completo en siguiente factura</label><br>
+        <input id="pro1" type="checkbox" name="pro1" value="Quiero activar el canal FoxSport, acepta proporcional mas el mes completo en siguiente factura "><label class="rvo" for="pro1">Quiero activar el canal FoxSport, acepta proporcional mas el mes completo en siguiente factura</label><br>
+        <input id="pro2" type="checkbox" name="pro2" value="Acepta programacion premium 1 mes free siguientes 2 meses al 50% "><label class="rvp" for="pro2">Acepta programacion premium 1 mes free siguientes 2 meses al 50%</label><br>
+        <input id="pro3" type="checkbox" name="pro3" value="Quiero un deco adicional, acepta 29990 por instalacion + 4100 deco adicional en proxima boleta "><label class="rvp" for="pro3">Quiero un deco adicional, acepta 29990 por instalacion + 4100 deco adicional en proxima boleta</label><br>
+        <input id="pro4" type="checkbox" name="pro4" value="Acepta full service primero 2 meses 50%, siguientes meses 100% "><label class="rvp" for="pro4">Acepta full service primero 2 meses 50%, siguientes meses 100%</label><br>
+        <label for="" class="tituloCopy">Tst</label><br>
+        <input id="tst" type="checkbox" name="tst" value="Quiero realizar la mudanza de mi servicio, se genera orden para mudar el servicio "><label class="rvp" for="tst">Quiero realizar la mudanza de mi servicio, se genera orden para mudar el servicio</label><br>
+        <input id="tst1" type="checkbox" name="tst1" value="Tengo un deco que no enciende, se realizan pruebas, se genera wo :-( "><label class="rvo" for="tst1">Tengo un deco que no enciende, se realizan pruebas, se genera wo :-(</label><br>
+        <input id="tst2" type="checkbox" name="tst2" value="Me aparece codigo 771, se realizan pruebas, no se soluciona, se genera wo :-( "><label class="rvo" for="tst2">Me aparece codigo 771, se realizan pruebas, no se soluciona, se genera wo :-(</label><br>
+        <input id="tst3" type="checkbox" name="tst3" value="Me aparece codigo 771, se realizan pruebas, se soluciona "><label class="rvo" for="tst3">Me aparece codigo 771, se realizan pruebas, se soluciona</label><br>
+        <input id="tst4" type="checkbox" name="tst4" value="Me aparece codigo 721/722, se envian comandos se soluciona, se informan medios de autogestion "><label class="rvo" for="tst4">Me aparece codigo 721/722, se envian comandos se soluciona, se informan medios de autogestion</label><br>
+        <input id="tst5" type="checkbox" name="tst5" value="Se pasa Work Orden a csr 1, se reporta por chat "><label class="rvo" for="tst5">Se pasa Work Orden a csr 1, se reporta por chat</label><br>
       
-    </div>
+      </div>
     </form>
     <br>
-       
+   
+    <script>
+   
+
+      document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById('boton').addEventListener('click', function(e) {
+              e.preventDefault();
+              //seleccionarTodo();
+              copyToClipBoard();
+          })});
+      
+      
+      function copyToClipBoard() {
+      var content = document.getElementById('texto');
+      content.select();
+      document.execCommand('copy');}
+      
+      </script>
+         
     
 </body>
 </html>
