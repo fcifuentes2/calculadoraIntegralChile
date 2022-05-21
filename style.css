@@ -14,21 +14,27 @@
 
   .nuevos {
     width: 175px;
+    border-radius: 5px;
   }
   .cartera {
     width: 180px;
+    border-radius: 5px;
   }
   .decos {
     width: 155px;
+    border-radius: 5px;
   }
   .premium {
     width: 200px;
+    border-radius: 5px;
   }
   .rvo {
     width: 185px;
+    border-radius: 5px;
   }
   .extras {
     width: 75px;
+    border-radius: 5px;
   }
   h4{
     color: yellow;
@@ -50,6 +56,7 @@
     border-radius: 4px;
     font-weight: 800;
     margin-top: 5px;
+    
 }
   input[type="radio"] {
       background-color: black;
@@ -75,17 +82,22 @@
     color: white;
   }
   #texto {
-    width: 470px;
+    width: 100%;
     height: 100px;
     font: bolder;
     font-weight: 800;
     font-size: large;
+    border-radius: 5px;
 }  
 .tituloCopy{
   background-color: black;
   color: white;
-  
-}
+  border-radius: 4px;
+  padding: 2px;
+ }
+ .Extra{
+   border-radius: 4px;
+ }
 .rvpEspacio{
   position: absolute;
   left: 245px;  

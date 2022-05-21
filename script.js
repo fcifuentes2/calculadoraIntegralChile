@@ -100,48 +100,6 @@ rvp6 + rvp7 + rvp8 + rvp9 + rvoEquipo - rvoExtra + Extra + recargo + tntflex + d
 document.getElementById('resultado').innerHTML = result;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('marcarTodo').addEventListener('click', function(e) {
-        e.preventDefault();
-        //seleccionarTodo();
-        checkAll();
-    });
-    document.getElementById('desmarcarTodo').addEventListener('click', function(e) {
-        e.preventDefault();
-        //desmarcarTodo();
-        uncheckAll();
-    });
-});
-
-function seleccionarTodo() {
-    for (let i=0; i < document.f1.elements.length; i++) {
-        if(document.f1.elements[i].type === "checkbox") {
-            document.f1.elements[i].checked = true;
-        }
-    }
-}
-
-function desmarcarTodo() {
-    for (let i=0; i<document.f1.elements.length; i++) {
-        if(document.f1.elements[i].type == "checkbox") {
-            document.f1.elements[i].checked = false
-        }
-    }
-}
-
-function checkAll() {
-    document.querySelectorAll('#formElement input[type=checkbox]').forEach(function(checkElement) {
-        checkElement.checked = true;
-    });
-}
-
-function uncheckAll() {
-    document.querySelectorAll('#formElement input[type=checkbox]').forEach(function(checkElement) {
-        checkElement.checked = false;
-    });
-}
-
-
 addEventListener('change', Total);
 
 function Total() {
@@ -150,6 +108,7 @@ function Total() {
 const rvo0Check = document.querySelector('input[name=rvo0]:checked')
 const rvo01Check = document.querySelector('input[name=rvo01]:checked')
 const rvo02Check = document.querySelector('input[name=rvo02]:checked')
+const rvo03Check = document.querySelector('input[name=rvo03]:checked')
 const rvp0Check = document.querySelector('input[name=rvp0]:checked')
 const rvp01Check = document.querySelector('input[name=rvp01]:checked')
 const facCheck = document.querySelector('input[name=fac]:checked')
@@ -165,10 +124,12 @@ const tst2Check = document.querySelector('input[name=tst2]:checked')
 const tst3Check = document.querySelector('input[name=tst3]:checked')
 const tst4Check = document.querySelector('input[name=tst4]:checked')
 const tst5Check = document.querySelector('input[name=tst5]:checked')
+const tst6Check = document.querySelector('input[name=tst6]:checked')
 // convertir los valores a String, o colocar un 0 si no elegieron algo//
 const rvo0 = rvo0Check ?  rvo0Check.value: ""
 const rvo01 = rvo01Check ?  rvo01Check.value: ""
 const rvo02 = rvo02Check ?  rvo02Check.value: ""
+const rvo03 = rvo03Check ?  rvo02Check.value: ""
 const rvp0 = rvp0Check ?  rvp0Check.value: ""
 const rvp01 = rvp01Check ?  rvp01Check.value: ""
 const fac = facCheck ?  facCheck.value: ""
@@ -184,9 +145,11 @@ const tst2 = tst2Check ?  tst2Check.value: ""
 const tst3 = tst3Check ?  tst3Check.value: ""
 const tst4 = tst4Check ?  tst4Check.value: ""
 const tst5 = tst5Check ?  tst5Check.value: ""
+const tst6 = tst6Check ?  tst6Check.value: ""
 
 //suma total se le asigna a variable result
-const resultado = rvo0 + rvo01 + rvo02 + rvp0 + rvp01 + fac + fac1 + pro + pro1 + pro2 + pro3 + pro4 + tst + tst1 + tst2 + tst3 + tst4 + tst5;
+const resultado = rvo0 + rvo01 + rvo02 + rvo03+ rvp0 + rvp01 + fac + fac1 + pro + pro1 + pro2 + pro3 + pro4
+ + tst + tst1 + tst2 + tst3 + tst4 + tst5 + tst6;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('texto').innerHTML = resultado;
