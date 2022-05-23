@@ -49,6 +49,7 @@ const rvp6Check = document.querySelector('input[name=rvp6]:checked')
 const rvp7Check = document.querySelector('input[name=rvp7]:checked')
 const rvp8Check = document.querySelector('input[name=rvp8]:checked')
 const rvp9Check = document.querySelector('input[name=rvp9]:checked')
+const rvp10Check = document.querySelector('input[name=rvp10]:checked')
 const rvoCheck = document.querySelector('input[name=rvoEquipo]:checked')
 const rvoText = document.querySelector('input[name=rvoExtra]')
 const estraText = document.querySelector('input[name=Extra]')          
@@ -86,6 +87,7 @@ const rvp6 = rvp6Check ?  Number(rvp6Check.value): 0
 const rvp7 = rvp7Check ?  Number(rvp7Check.value): 0
 const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
 const rvp9 = rvp9Check ?  Number(rvp9Check.value): 0
+const rvp10 = rvp10Check ?  Number(rvp10Check.value): 0
 const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
 const rvoExtra = rvoText ?  Number(rvoText.value): 0
 const Extra = estraText ?  Number(estraText.value): 0
@@ -94,13 +96,14 @@ const Extra = estraText ?  Number(estraText.value): 0
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
 premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + 
-rvp6 + rvp7 + rvp8 + rvp9 + rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado;
+rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
-document.getElementById('resultado2').innerHTML = result;
-}
+// document.querySelector('.resultado2').innerHTML = result;
 
+}
+console.log(resultado)
 addEventListener('change', Total);
 
 function Total() {
@@ -136,7 +139,7 @@ const rvo0 = rvo0Check ?  rvo0Check.value: ""
 const rvo01 = rvo01Check ?  rvo01Check.value: ""
 const rvo02 = rvo02Check ?  rvo02Check.value: ""
 const rvo03 = rvo03Check ?  rvo03Check.value: ""
-const rvp0 = rvp0Check ?  rvp0Check.value: ""
+const rvp0 = rvp0Check ?  rvp0Check.value: "" 
 const rvp01 = rvp01Check ?  rvp01Check.value: ""
 const fac = facCheck ?  facCheck.value: ""
 const fac1 = fac1Check ?  fac1Check.value: ""
