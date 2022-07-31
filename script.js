@@ -138,6 +138,7 @@ const pro5Check = document.querySelector('input[name=pro5]:checked')
 const pro6Check = document.querySelector('input[name=pro6]:checked')
 const pro7Check = document.querySelector('input[name=pro7]:checked')
 const pro8Check = document.querySelector('input[name=pro8]:checked')
+const pro9Check = document.querySelector('input[name=pro9]:checked')
 const tstCheck = document.querySelector('input[name=tst]:checked')
 const tst1Check = document.querySelector('input[name=tst1]:checked')
 const tst2Check = document.querySelector('input[name=tst2]:checked')
@@ -185,6 +186,7 @@ const pro5 = pro5Check ?  pro5Check.value: ""
 const pro6 = pro6Check ?  pro6Check.value: ""
 const pro7 = pro7Check ?  pro7Check.value: ""
 const pro8 = pro8Check ?  pro8Check.value: ""
+const pro9 = pro9Check ?  pro9Check.value: ""
 const tst = tstCheck ?  tstCheck.value: ""
 const tst1 = tst1Check ?  tst1Check.value: ""
 const tst2 = tst2Check ?  tst2Check.value: ""
@@ -205,8 +207,8 @@ const ext1 = ext1Check ?  ext1Check.value: ""
 
 //suma total se le asigna a variable result
 const resultado = rvo0 + rvo01 + rvo02 + rvo03+ rvo04 + rvp0 + rvp01 + rvp02 + rvp03 + rvp04 + rvp05 + rvp06 +
-rvp07 + fac + fac1 + fac2 + fac3 + fac4 + fac5 + fac6 + pro + pro1 + pro6 + pro8 + tst + tst1 + tst2 + tst3 + tst4 + 
-tst5 + tst6 + tst7 + tst8 + tst9 + tst10 + tst11 + cob + cob1 + ext + ext1 + pro7 + pro2 + pro3 + pro4 + pro5 ;
+rvp07 + fac + fac1 + fac2 + fac3 + fac4 + fac5 + fac6 + pro + pro1 +  pro8 + pro9 + tst + tst1 + tst2 + tst3 + tst4 + 
+tst5 + tst6 + tst7 + tst8 + tst9 + tst10 + tst11 + cob + cob1 + ext + ext1 + pro7 + pro2 + pro3 + pro4 + pro5 + pro6 ;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('texto').innerHTML = resultado;
