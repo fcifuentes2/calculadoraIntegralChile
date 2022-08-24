@@ -100,6 +100,8 @@ rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvoEquipo - rvoExtra + Extra + recargo + tnt
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
+text = "total a pagar $" + result;  
+document.getElementById('texto').innerHTML = text;
 // document.querySelector('.resultado2').innerHTML = result;
 
 }
@@ -114,6 +116,10 @@ const rvo01Check = document.querySelector('input[name=rvo01]:checked')
 const rvo02Check = document.querySelector('input[name=rvo02]:checked')
 const rvo03Check = document.querySelector('input[name=rvo03]:checked')
 const rvo04Check = document.querySelector('input[name=rvo04]:checked')
+const rvo05Check = document.querySelector('input[name=rvo05]:checked')
+const rvo06Check = document.querySelector('input[name=rvo06]:checked')
+const rvo07Check = document.querySelector('input[name=rvo07]:checked')
+const rvo08Check = document.querySelector('input[name=rvo08]:checked')
 const rvp0Check = document.querySelector('input[name=rvp0]:checked')
 const rvp01Check = document.querySelector('input[name=rvp01]:checked') 
 const rvp02Check = document.querySelector('input[name=rvp02]:checked') 
@@ -162,6 +168,10 @@ const rvo01 = rvo01Check ?  rvo01Check.value: ""
 const rvo02 = rvo02Check ?  rvo02Check.value: ""
 const rvo03 = rvo03Check ?  rvo03Check.value: ""
 const rvo04 = rvo04Check ?  rvo04Check.value: ""
+const rvo05 = rvo05Check ?  rvo05Check.value: ""
+const rvo06 = rvo06Check ?  rvo06Check.value: ""
+const rvo07 = rvo07Check ?  rvo07Check.value: ""
+const rvo08 = rvo08Check ?  rvo08Check.value: ""
 const rvp0 = rvp0Check ?  rvp0Check.value: "" 
 const rvp01 = rvp01Check ?  rvp01Check.value: ""
 const rvp02 = rvp02Check ?  rvp02Check.value: ""
@@ -206,7 +216,7 @@ const ext1 = ext1Check ?  ext1Check.value: ""
 
 
 //suma total se le asigna a variable result
-const resultado = rvo0 + rvo01 + rvo02 + rvo03+ rvo04 + rvp0 + rvp01 + rvp02 + rvp03 + rvp04 + rvp05 + rvp06 +
+const resultado = rvo0 + rvo01 + rvo02 + rvo03+ rvo04 + rvo05 + rvo06 + rvo07 + rvo08 + rvp0 + rvp01 + rvp02 + rvp03 + rvp04 + rvp05 + rvp06 +
 rvp07 + fac + fac1 + fac2 + fac3 + fac4 + fac5 + fac6 + pro + pro1 +  pro8 + pro9 + tst + tst1 + tst2 + tst3 + tst4 + 
 tst5 + tst6 + tst7 + tst8 + tst9 + tst10 + tst11 + cob + cob1 + ext + ext1 + pro7 + pro2 + pro3 + pro4 + pro5 + pro6 ;
 
