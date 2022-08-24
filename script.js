@@ -101,10 +101,131 @@ rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvoEquipo - rvoExtra + Extra + recargo + tnt
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
 //text = "total a pagar $" + result;  
-//document.getElementById('texto').innerHTML = text;
+//document.getElementsByTagName('textarea').innerHTML = text;
 // document.querySelector('.resultado2').innerHTML = result;
 
+
+// obtener todos los input radio y checkbox
+const rvo0Check = document.querySelector('input[name=rvo0]:checked')
+const rvo01Check = document.querySelector('input[name=rvo01]:checked')
+const rvo02Check = document.querySelector('input[name=rvo02]:checked')
+const rvo03Check = document.querySelector('input[name=rvo03]:checked')
+const rvo04Check = document.querySelector('input[name=rvo04]:checked')
+const rvo05Check = document.querySelector('input[name=rvo05]:checked')
+const rvo06Check = document.querySelector('input[name=rvo06]:checked')
+const rvo07Check = document.querySelector('input[name=rvo07]:checked')
+const rvo08Check = document.querySelector('input[name=rvo08]:checked')
+const rvp0Check = document.querySelector('input[name=rvp0]:checked')
+const rvp01Check = document.querySelector('input[name=rvp01]:checked') 
+const rvp02Check = document.querySelector('input[name=rvp02]:checked') 
+const rvp03Check = document.querySelector('input[name=rvp03]:checked') 
+const rvp04Check = document.querySelector('input[name=rvp04]:checked') 
+const rvp05Check = document.querySelector('input[name=rvp05]:checked') 
+const rvp06Check = document.querySelector('input[name=rvp06]:checked') 
+const rvp07Check = document.querySelector('input[name=rvp07]:checked') 
+//const fac0Check = document.querySelector('input[name=fac0]:checked')
+const facCheck = document.querySelector('input[name=fac]:checked')
+const fac1Check = document.querySelector('input[name=fac1]:checked')
+const fac2Check = document.querySelector('input[name=fac2]:checked')
+const fac3Check = document.querySelector('input[name=fac3]:checked')
+const fac4Check = document.querySelector('input[name=fac4]:checked')
+const fac5Check = document.querySelector('input[name=fac5]:checked')
+const fac6Check = document.querySelector('input[name=fac6]:checked')
+const proCheck = document.querySelector('input[name=pro]:checked')
+const pro1Check = document.querySelector('input[name=pro1]:checked')
+const pro2Check = document.querySelector('input[name=pro2]:checked')
+const pro3Check = document.querySelector('input[name=pro3]:checked')
+const pro4Check = document.querySelector('input[name=pro4]:checked')
+const pro5Check = document.querySelector('input[name=pro5]:checked')
+const pro6Check = document.querySelector('input[name=pro6]:checked')
+const pro7Check = document.querySelector('input[name=pro7]:checked')
+const pro8Check = document.querySelector('input[name=pro8]:checked')
+const pro9Check = document.querySelector('input[name=pro9]:checked')
+const tstCheck = document.querySelector('input[name=tst]:checked')
+const tst1Check = document.querySelector('input[name=tst1]:checked')
+const tst2Check = document.querySelector('input[name=tst2]:checked')
+const tst3Check = document.querySelector('input[name=tst3]:checked')
+const tst4Check = document.querySelector('input[name=tst4]:checked')
+const tst5Check = document.querySelector('input[name=tst5]:checked')
+const tst6Check = document.querySelector('input[name=tst6]:checked')
+const tst7Check = document.querySelector('input[name=tst7]:checked')
+const tst8Check = document.querySelector('input[name=tst8]:checked')
+const tst9Check = document.querySelector('input[name=tst9]:checked')
+const tst10Check = document.querySelector('input[name=tst10]:checked')
+const tst11Check = document.querySelector('input[name=tst11]:checked')
+const cobCheck = document.querySelector('input[name=cob]:checked')
+const cob1Check = document.querySelector('input[name=cob1]:checked')
+const extCheck = document.querySelector('input[name=ext]:checked')
+const ext1Check = document.querySelector('input[name=ext1]:checked')
+
+// convertir los valores a String, o colocar un 0 si no elegieron algo//
+const rvo0 = rvo0Check ?  rvo0Check.value: ""
+const rvo01 = rvo01Check ?  rvo01Check.value: ""
+const rvo02 = rvo02Check ?  rvo02Check.value: ""
+const rvo03 = rvo03Check ?  rvo03Check.value: ""
+const rvo04 = rvo04Check ?  rvo04Check.value: ""
+const rvo05 = rvo05Check ?  rvo05Check.value: ""
+const rvo06 = rvo06Check ?  rvo06Check.value: ""
+const rvo07 = rvo07Check ?  rvo07Check.value: ""
+const rvo08 = rvo08Check ?  rvo08Check.value: ""
+const rvp0 = rvp0Check ?  rvp0Check.value: "" 
+const rvp01 = rvp01Check ?  rvp01Check.value: ""
+const rvp02 = rvp02Check ?  rvp02Check.value: ""
+const rvp03 = rvp03Check ?  rvp03Check.value: ""
+const rvp04 = rvp04Check ?  rvp04Check.value: ""
+const rvp05 = rvp05Check ?  rvp05Check.value: ""
+const rvp06 = rvp06Check ?  rvp06Check.value: ""
+const rvp07 = rvp07Check ?  rvp07Check.value: ""
+//const fac0 = fac0Check ?  fac0Check.value: ""
+const fac = facCheck ?  facCheck.value: ""
+const fac1 = fac1Check ?  fac1Check.value: ""
+const fac2 = fac2Check ?  fac2Check.value: ""
+const fac3 = fac3Check ?  fac3Check.value: ""
+const fac4 = fac4Check ?  fac4Check.value: ""
+const fac5 = fac5Check ?  fac5Check.value: ""
+const fac6 = fac6Check ?  fac6Check.value: ""
+const pro = proCheck ?  proCheck.value: ""
+const pro1 = pro1Check ?  pro1Check.value: ""
+const pro2 = pro2Check ?  pro2Check.value: ""
+const pro3 = pro3Check ?  pro3Check.value: ""
+const pro4 = pro4Check ?  pro4Check.value: ""
+const pro5 = pro5Check ?  pro5Check.value: ""
+const pro6 = pro6Check ?  pro6Check.value: ""
+const pro7 = pro7Check ?  pro7Check.value: ""
+const pro8 = pro8Check ?  pro8Check.value: ""
+const pro9 = pro9Check ?  pro9Check.value: ""
+const tst = tstCheck ?  tstCheck.value: ""
+const tst1 = tst1Check ?  tst1Check.value: ""
+const tst2 = tst2Check ?  tst2Check.value: ""
+const tst3 = tst3Check ?  tst3Check.value: ""
+const tst4 = tst4Check ?  tst4Check.value: ""
+const tst5 = tst5Check ?  tst5Check.value: ""
+const tst6 = tst6Check ?  tst6Check.value: ""
+const tst7 = tst7Check ?  tst7Check.value: ""
+const tst8 = tst8Check ?  tst8Check.value: ""
+const tst9 = tst9Check ?  tst9Check.value: ""
+const tst10 = tst10Check ?  tst10Check.value: ""
+const tst11 = tst11Check ?  tst11Check.value: ""
+const cob = cobCheck ?  cobCheck.value: ""
+const cob1 = cob1Check ?  cob1Check.value: ""
+const ext = extCheck ?  extCheck.value: ""
+const ext1 = ext1Check ?  ext1Check.value: ""
+if(document.getElementById('fac0').checked){ var fac0 = ",total a pagar $" + String(result)}else{ fac0 = ""}
+
+
+//suma total se le asigna a variable result
+const resultado = rvo0 + rvo01 + rvo02 + rvo03+ rvo04 + rvo05 + rvo06 + rvo07 + rvo08 + rvp0 + rvp01 + rvp02 + rvp03 + rvp04 + rvp05 + rvp06 +
+rvp07 + fac + fac1 + fac2 + fac3 + fac4 + fac5 + fac6 + pro + pro1 +  pro8 + pro9 + tst + tst1 + tst2 + tst3 + tst4 + 
+tst5 + tst6 + tst7 + tst8 + tst9 + tst10 + tst11 + cob + cob1 + ext + ext1 + pro7 + pro2 + pro3 + pro4 + pro5 + pro6 + fac0 ;
+
+//se asigna valor de variable result a resultado para poder ser mostrado en pantalla
+document.getElementById('texto').innerHTML = resultado;
+
+
+
+
 }
+/*
 console.log(resultado)
 addEventListener('change', Total);
 
@@ -224,6 +345,6 @@ tst5 + tst6 + tst7 + tst8 + tst9 + tst10 + tst11 + cob + cob1 + ext + ext1 + pro
 document.getElementById('texto').innerHTML = resultado;
 }
 
-
+*/
 
         
