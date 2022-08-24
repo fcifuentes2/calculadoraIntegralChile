@@ -100,8 +100,8 @@ rvp6 + rvp7 + rvp8 + rvp9 + rvp10 + rvoEquipo - rvoExtra + Extra + recargo + tnt
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
-text = "total a pagar $" + result;  
-document.getElementById('texto').innerHTML = text;
+//text = "total a pagar $" + result;  
+//document.getElementById('texto').innerHTML = text;
 // document.querySelector('.resultado2').innerHTML = result;
 
 }
