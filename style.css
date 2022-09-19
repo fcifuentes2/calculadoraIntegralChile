@@ -11,8 +11,10 @@
   input:checked + label {
     color: black;
   }
-
-   .nuevos {
+  .ciclo {
+    display: none;
+  }
+  .nuevos {
     width: 175px;
     border-radius: 5px;
   }

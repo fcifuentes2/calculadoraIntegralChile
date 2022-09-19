@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
   <head prefix="og: https://ogp.me/ns#">
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNTLJ884MJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BNTLJ884MJ');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,8 +75,7 @@
         <input class="cheEspacio" id="rvp4" type="checkbox" name="rvp4" value="-4150"><label class="rvpEspacio" for="rvp4">50%</label> <br>
         <input id="universal" type="checkbox" name="premium6" value="8300"><label for="universal">Universal----------></label> 
         <input class="cheEspacio" id="rvp5" type="checkbox" name="rvp5" value="-4150"><label class="rvpEspacio" for="rvp5">50%</label> <br>
-        <input id="combo2" type="checkbox" name="premium8" value="10500"><label for="combo2">Combo $10.500</label>
-        <input class="cheEspacio" id="rvp10" type="checkbox" name="rvp10" value="-2580"><label class="rvpEspacio" for="rvp10">Dcto $2580</label><br>
+        <input id="combo2" type="checkbox" name="premium8" value="10500"><label for="combo2">Combo $10.500</label><br>
         <input id="star+" type="checkbox" name="premium9" value="8500"><label for="star+">Star+ $8.500</label> <br>
         <input id="disney" type="checkbox" name="premium10" value="6500"><label for="disney">Disney $6.500</label> <br>
         <input id="foxsport" type="checkbox" name="premium11" value="10450"><label for="foxsport">Fox Sport----------></label>
@@ -107,21 +114,37 @@
       <input id="deco" type="checkbox" name="deco" value="29990"><label class="rvpValor" for="deco">Deco Adicional $29.990</label><br>
       <input id="cambio" type="checkbox" name="cambio" value="15990"><label class="rvpValor" for="cambio">Cambio lugar deco/antena $15.990</label><br>
       <input id="recableado" type="checkbox" name="recableado" value="13990"><label class="rvpValor" for="recableado">Recableado $13.990</label><br>
-      <input id="extra" type="text" name="Extra" value="" class="Extra"><label for="Extra">Ingresa un cargo adicional</label>
-      <br>
-      <br>
-      <label class="flotante" id="resultado" name="resultado"></Label><br>
-      <!-- <label class="resultado2" ></Label><br> -->
+      <input id="extra" type="text" name="Extra" value="" class="Extra"><label for="Extra">Ingresa un cargo adicional</label><br>
+
+      <label>Proporcional Activacion Premium:</label><br>
+      <input id="tntp" type="checkbox" name="premium1p" value="305"><label class="rvpValor" for="tntp">Tnt</label>
+      <input id="tnthdp" type="checkbox" name="premium2p" value="395"><label class="rvpValor" for="tnthdp">TntHD</label>
+      <input id="foxp" type="checkbox" name="premium3p" value="348"><label class="rvpValor" for="foxp">FoxSport</label>
+      <input id="combop" type="checkbox" name="premium4p" value="350"><label class="rvpValor" for="combop">Combo</label>
+      <input id="starp" type="checkbox" name="premium5p" value="283"><label class="rvpValor" for="starp">Star+</label>
+      <input id="disneyp" type="checkbox" name="premium6p" value="216"><label class="rvpValor" for="disneyp">Disney+</label>
+      <label>Ciclo</label>
+      <input id="c1" type="radio" name="ciclo" value="1" ><label for="c1">1-30</label>
+      <input id="c4" type="radio" name="ciclo" value="4" ><label for="c4">4-3</label>
+      <input id="c10" type="radio" name="ciclo" value="10"><label for="c10">10-9</label>
+      <input id="c16" type="radio" name="ciclo" value="16"><label for="c16">16-15</label>
+      <input id="c22" type="radio" name="ciclo" value="22"><label for="c22">22-21</label>
+      <input id="c0" type="radio" name="ciclo" value="0"><label for="c0">0</label><br>
+      <label class="flotante, enlace, ciclo" id="dias" ></Label><label class="ciclo"> dias Proporcionales </label>
+      <label class="ciclo">desde hoy </label><label class="ciclo" id="fechaInicio"></label>
+      <label class="ciclo"> Hasta el </label><label class="flotante, enlace, ciclo" id="fechaFin" ></Label>
+      <label class="ciclo">por valor de $</label><label class="flotante, enlace, ciclo" id="proporcional" ></Label><br>
       
+      <br>
+      
+      <label >Total a Pagar $</label><label class="flotante, enlace" id="resultado" name="resultado"></Label><br>
+      <!-- <label class="resultado2" ></Label><br> -->
+      <br>
+      <br>
       <button class="flotanteButton" >Borrar</button>
       <br>
       <br>
-      <br>
-      <br>
-      <a id="modo" href="https://fcifuentes2.github.io/">Black</a>
-      <br>
-      <br>
-      <br>
+      <!-- <a id="modo" href="https://fcifuentes2.github.io/">Black</a> -->
       <p id="sugerencia">Sugerencias, errores escribeme x workPlace: <a href="https://directv.workplace.com/chat/t/100001212809222" target="_blank"> Fernando Cifuentes Obonaga</a> </p>
       </div>
       <div class="c7">
@@ -176,7 +199,7 @@
         <input id="pro" type="checkbox" name="pro" value="Quiero activar el canal Tnt, acepta proporcional mas el mes completo en siguiente factura. "><label class="rvo" for="pro">Quiero activar el canal Tnt, acepta proporcional mas el mes completo en siguiente factura</label><br>
         <input id="pro1" type="checkbox" name="pro1" value="Quiero activar el canal FoxSport, acepta proporcional mas el mes completo en siguiente factura. "><label class="rvo" for="pro1">Quiero activar el canal FoxSport, acepta proporcional mas el mes completo en siguiente factura</label><br>
         <input id="pro2" type="checkbox" name="pro2" value="Acepta cambio de plan plata a oro con oferta por 3 meses pagando plan plata"><label class="rvp" for="pro2">Acepta cambio de plan plata a oro con oferta por 3 meses pagando plan plata</label><br>
-        <input id="pro3" type="checkbox" name="pro3" value="Acepta programacion premium free septiembre siguientes 2 meses al 50%, activa: "><label class="rvp" for="pro3">Acepta programacion premium free septiembre siguientes 2 meses al 50%, activa:</label>
+        <input id="pro3" type="checkbox" name="pro3" value="Acepta programacion premium free octubre siguientes 2 meses al 50%, activa: "><label class="rvp" for="pro3">Acepta programacion premium free octubre siguientes 2 meses al 50%, activa:</label>
         <input id="pro4" type="checkbox" name="pro4" value="Hbo "><label class="rvp" for="pro4">Hbo</label>
         <input id="pro5" type="checkbox" name="pro5" value="Universal "><label class="rvp" for="pro5">Universal</label>
         <input id="pro6" type="checkbox" name="pro6" value="Hot Pack "><label class="rvp" for="pro6">Hot Pack</label><br>
