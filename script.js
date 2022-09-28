@@ -165,9 +165,9 @@ premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5
 rvp6 + rvp7 + rvp8 + rvp9 + rvoEquipo - rvoExtra + Extra + recargo + tntflex + deco + cambio + recableado + pagapro;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
-document.getElementById('resultado').innerHTML = result;
+document.getElementById('resultado').innerHTML = result.toLocaleString('en');
 document.getElementById('dias').innerHTML = proporciona;
-document.getElementById('proporcional').innerHTML = pagapro;
+document.getElementById('proporcional').innerHTML = pagapro.toLocaleString('en');
 document.getElementById('fechaFin').innerHTML = fechaHasta;
 document.getElementById('fechaInicio').innerHTML = fechaInicio;
 
@@ -274,7 +274,7 @@ const cob = cobCheck ?  cobCheck.value: ""
 const cob1 = cob1Check ?  cob1Check.value: ""
 const ext = extCheck ?  extCheck.value: ""
 const ext1 = ext1Check ?  ext1Check.value: ""
-if(document.getElementById('fac0').checked){ var fac0 = ",total a pagar $" + String(result)}else{ fac0 = ""}
+if(document.getElementById('fac0').checked){ var fac0 = ",total a pagar $" + String(result.toLocaleString('en'))}else{ fac0 = ""}
 
 
 //suma total se le asigna a variable result
