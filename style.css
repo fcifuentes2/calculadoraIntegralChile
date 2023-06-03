@@ -95,9 +95,81 @@
   #modo {
     color: white;
   }
- 
+  
+  .nuevoEspacio{
+    position: absolute;
+    left: 280px;
+  
+  }
+  .planEspacio{
+    position: absolute;
+    left: 260px;
+  }
 
-
+  .packEspacio{
+    position: relative;
+    margin-left: 85px;
+  }
+  .espacio{
+    position: relative;
+    left: 80px;
+  }
+  .packEspaciob{
+    position: relative;
+    margin-left: 45px;
+  }
+  .espaciob{
+    position: relative;
+    left: 40px;
+  }
+  .packEspaciop{
+    position: relative;
+    margin-left: 107px;
+  }
+  .espaciop{
+    position: relative;
+    left: 102px;
+  }
+  .packEspacioph{
+    position: relative;
+    margin-left: 68px;
+  }
+  .espacioph{
+    position: relative;
+    left: 63px;
+  }
+  .packEspacioo{
+    position: relative;
+    margin-left: 120px;
+  }
+  .espacioo{
+    position: relative;
+    left: 115px;
+  }
+  .packEspaciooh{
+    position: relative;
+    margin-left: 80px;
+  }
+  .espaciooh{
+    position: relative;
+    left: 75px;
+  }
+  .packEspacioop{
+    position: relative;
+    margin-left: 74px;
+  }
+  .espacioop{
+    position: relative;
+    left: 69px;
+  }
+  .packEspaciooph{
+    position: relative;
+    margin-left: 33px;
+  }
+  .espaciooph{
+    position: relative;
+    left: 28px;
+  }
   #texto {
     width: 100%;
     height: 100px;
@@ -231,13 +303,13 @@
   }
   @media (min-width: 800px) {
     .c1 {
-      width: 30%;
+      width: 35%;
     }
     .c2 {
-      width: 30%;
+      width: 35%;
     }
     .c3 {
-      width: 40%;
+      width: 30%;
     }
     .c4 {
       width: 30%;
